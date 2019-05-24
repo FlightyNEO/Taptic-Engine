@@ -38,13 +38,13 @@ class ViewController: UITableViewController {
     
     // MARK: - Private methods
     
-    fileprivate func vibrateWithImpactFeedbackGenerator(style: UIImpactFeedbackStyle) {
+    fileprivate func vibrateWithImpactFeedbackGenerator(style: UIImpactFeedbackGenerator.FeedbackStyle) {
         let generator = UIImpactFeedbackGenerator(style: style)
         generator.impactOccurred()
         
     }
     
-    fileprivate func vibrateWithNotificationFeedbackGenerator(type: UINotificationFeedbackType) {
+    fileprivate func vibrateWithNotificationFeedbackGenerator(type: UINotificationFeedbackGenerator.FeedbackType) {
         let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(type)
     }
